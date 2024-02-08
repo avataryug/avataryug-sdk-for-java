@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Avataryug.Example.QuickTest.ExampleAvatarmanagement">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Avatar Management"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <Button
+            android:id="@+id/GenerateAvatarMeshBtn"
+            android:layout_width="195sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:backgroundTint="#E8E6E6"
+            android:text="Generate Avatar Mesh"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/GetAvatarPresetsBtn"
+            android:layout_width="195sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:backgroundTint="#E8E6E6"
+            android:text="Get Avatar Presets"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:cornerRadius="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout21">
+
+        <Button
+            android:id="@+id/GetClipsBtn"
+            android:layout_width="195sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:backgroundTint="#E8E6E6"
+            android:text="Get Clips"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/GetClipsByIDBtn"
+            android:layout_width="195sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:backgroundTint="#E8E6E6"
+            android:text="Get Clips By ID"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:cornerRadius="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout22">
+
+        <Button
+            android:id="@+id/GetExpressionsBtn"
+            android:layout_width="195sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:backgroundTint="#E8E6E6"
+            android:text="Get Expressions"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/GetExpressionsByIDBtn"
+            android:layout_width="195sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:backgroundTint="#E8E6E6"
+            android:text="Get Expressions By ID"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:cornerRadius="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout23">
+
+        <Button
+            android:id="@+id/GetAllBucketVerticesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:backgroundTint="#E8E6E6"
+            android:text="Get All Bucket Vertices"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="9sp"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/GrantAvatarPresetItemsToUserBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:backgroundTint="#E8E6E6"
+            android:text="Grant Avatar Preset Items To User"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="9sp"
+            app:cornerRadius="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout24">
+
+        <Button
+            android:id="@+id/RenderAvatarImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:backgroundTint="#E8E6E6"
+            android:text="Render Avatar Image"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/SyncAvatarsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:backgroundTint="#E8E6E6"
+            android:text="Sync Avatars"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:cornerRadius="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout25">
+
+        <Button
+            android:id="@+id/GrantAvatarPresetToUserBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:backgroundTint="#E8E6E6"
+            android:text="Grant Avatar Preset To  User"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/GetAvatarPresetsByIDBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:backgroundTint="#E8E6E6"
+            android:text="Get Avatar Presets By ID"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            app:cornerRadius="5dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

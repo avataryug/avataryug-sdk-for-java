@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Avataryug.Example.AvatarLoader.AvatarYugViewer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            app:borderWidth="1dp"
+            app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_margin="8sp"
+            android:layout_weight="1"
+            android:text="Avatar Loader"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@style/ThemeOverlay.AppCompat"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#EFEFEF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Topsbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Top"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:cornerRadius="5dp"
+            />
+
+        <Button
+            android:id="@+id/Bottombutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Bottom"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:cornerRadius="5dp"  />
+
+        <Button
+            android:id="@+id/Morebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:backgroundTint="#FFFFFF"
+            android:text="More"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:cornerRadius="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

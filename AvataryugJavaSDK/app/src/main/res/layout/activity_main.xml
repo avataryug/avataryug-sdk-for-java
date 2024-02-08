@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Avataryug.Example.QuickTest.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <fragment
+                android:id="@+id/ExampleAuthentication"
+                android:name="Avataryug.Example.QuickTest.ExampleAuthentication"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout="@layout/fragment_example_authentication" />
+
+            <fragment
+                android:id="@+id/ExampleUserAccountManagement"
+                android:name="Avataryug.Example.QuickTest.ExampleUserAccountManagement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight='1'
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout="@layout/fragment_example_user_account_management" />
+
+            <fragment
+                android:id="@+id/ExampleEconomy"
+                android:name="Avataryug.Example.QuickTest.ExampleEconomy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight='1'
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout="@layout/fragment_example_economy" />
+
+            <fragment
+                android:id="@+id/ExampleUserDataManagement"
+                android:name="Avataryug.Example.QuickTest.ExampleUserDataManagement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight='1'
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout="@layout/fragment_example_user_data_management" />
+
+            <fragment
+                android:id="@+id/ExampleAdvertising"
+                android:name="Avataryug.Example.QuickTest.ExampleAdvertising"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight='1'
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout="@layout/fragment_example_advertising" />
+
+            <fragment
+                android:id="@+id/ExampleAvatarmanagement"
+                android:name="Avataryug.Example.QuickTest.ExampleAvatarmanagement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight='1'
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout="@layout/fragment_example_avatarmanagement" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

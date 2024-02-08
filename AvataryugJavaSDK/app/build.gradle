@@ -1,0 +1,56 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.myjavasdkandroid'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.myjavasdkandroid"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+ext {
+    swagger_annotations_version = "1.6.6"
+    gson_version = "2.8.9"
+    httpmime_version = "4.5.13"
+    volley_version = "1.2.1"
+    junit_version = "4.13.2"
+    robolectric_version = "4.5.1"
+    concurrent_unit_version = "0.4.6"
+}
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation "io.swagger:swagger-annotations:$swagger_annotations_version"
+    implementation "com.google.code.gson:gson:$gson_version"
+    implementation "org.apache.httpcomponents:httpmime:$httpmime_version"
+    implementation "com.android.volley:volley:${volley_version}"
+    testImplementation "org.robolectric:robolectric:${robolectric_version}"
+    testImplementation "net.jodah:concurrentunit:${concurrent_unit_version}"
+}

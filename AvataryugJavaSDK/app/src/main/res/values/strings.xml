@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AYJavaSDK</string>
+    <string name="login_with_customid">Login With CustomID</string>
+    <string name="login_with_Androidid" />
+    <string name="login_with_android_id">Login with Android ID</string>
+    <string name="login_with_ios_device_id">Login with IOS DEVICE ID</string>
+    <string name="login_with_apple">Login with Apple</string>
+    <string name="login_with_email">Login with Email</string>
+    <string name="create_account">Create Account</string>
+    <string name="Create_Account">Create Account</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_google">Login With Google</string>
+    <string name="create_new_accounts">Create New Accounts</string>
+    <string name="login_facebook">Login FaceBook</string>
+    <string name="goggle_signin">Goggle SignIn</string>
+    <string name="link_customid">Link CustomID</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
